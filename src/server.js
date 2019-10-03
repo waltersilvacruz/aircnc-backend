@@ -5,11 +5,10 @@ const cors = require('cors');
 const path = require('path');
 
 const app = express();
-
 mongoose.connect('mongodb+srv://oministack:oministack@oministack-nn7xm.mongodb.net/semana09?retryWrites=true&w=majority', {
     useNewUrlParser: true,
     useUnifiedTopology: true
-})
+});
 
 app.use(cors());
 app.use(express.json());
